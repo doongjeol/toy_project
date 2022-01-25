@@ -1,0 +1,134 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+/* background-color : #F8F9FA
+border-line : lightgrey
+box-shadow : rgba(100, 100, 100, 0.7)*/
+
+* {
+    font-family:  'NanumSquare', sans-serif;
+}
+
+body {
+    background-color: #F8F9FA;
+}
+.navbar{
+    padding: 20px;
+}
+
+.nav-item{
+    padding: 0px 0px 0px 40px;
+    font-weight: bold;
+}
+
+.panel{
+    border-style: solid;
+    border-color: lightgrey;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(100, 100, 100, 0.7);
+    margin: 20px;
+    padding: 20px;
+    width: 1600px; /*debug*/
+    height: 1000px; /*debug*/
+}
+
+.news-container{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: "sidebar-a main sidebar-b";
+}
+
+.news-item-container:nth-child(1), .news-item-container:nth-child(2){
+    border-right: 1px solid lightgrey;
+}
+
+.news-item-container{
+    height: 900px; /*debug*/
+}
+
+.news-item-container h4{
+    color : #fff;
+    margin : 1em;
+    font-family: 'NanumSquare', sans-serif;
+    text-align: left;
+}
+
+.news-item-container:nth-child(1){
+    /*background-color: #D0CECE; !*debug*!*/
+    grid-area: sidebar-a;
+}
+
+
+.news-item-container:nth-child(2){
+    /*background-color: #EBF0F9; !*debug*!*/
+    grid-area: main;
+}
+
+.news-item-container:nth-child(3){
+    background-color: #f5c6cb; /*debug*/
+    grid-area: sidebar-b;
+}
+
+.list-group-item{
+    background-color: transparent;
+    border: none;
+    margin: 10px 0px;
+}
+
+span.mostread-news-ranking{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+a.mostread-news-category{
+    display: block;
+    color: #70AD47;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+a.mostread-news-title{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 0px;
+}
+
+.primary-news-category{
+    margin: 20px;
+}
+
+.btn{
+    color: #ffffff;
+}
+
+.btn:hover{
+    background-color: rgba(113,88,243,0.6);
+}
+
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary{
+    background-color: #7158F3;
+    border-color: transparent;
+}
+
+.btn-group{
+    background-color: lightgrey;
+}
+
+.btn-outline-primary{
+    border-color: #ffffff;
+}
+
+.btn-outline-primary:hover{
+    border-color: lightgrey;
+}
+
+.btn-outline-primary:active{
+    border-color: #ffffff;
+}
+
+label.primary-news-category{
+    background-color: lightgrey;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
