@@ -32,7 +32,7 @@ main {
 }
 
 /* header 부분 고정 */
-.header__wrapper {
+.heade-wrapper {
     position: fixed;
     top: 0;
     width: 100%;
@@ -47,45 +47,45 @@ main {
     align-items: center;
 }
 
-.header .header__title {
+.header .header-title {
     font-size: 24px;
     font-weight: 600;
     margin: 0px;
 }
 
-.header .header__icon {
+.header .header-icon {
     margin-left: 20px;
     font-size: 24px;
     cursor: pointer;
 }
 
 /* chat back-btn 부분을 위한 스타일 */
-.header .header__header-column {
+.header .header-header-column {
     display: flex;
     align-items: center;
 }
 
-.header .header__back-btn {
+.header .header-back-btn {
     margin-right: 20px;
     font-size: 20px;
 }
 
-.message__icon__warn{
+.message-icon-warn{
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 5px;
 }
 
-.message__icon__block{
+.message-icon-block{
     margin-top: 50px;
 }
 
-.message__icon__warn:hover{
+.message-icon-warn:hover{
     color: orangered;
     cursor: pointer;
 }
 
-.message__icon__block:hover{
+.message-icon-block:hover{
     color: #ffa751;
     cursor: pointer;
     width: 50px;
@@ -109,7 +109,7 @@ main {
 }
 
 /* 채팅 치는 input 디자인 */
-.chat__write-container {
+.chat-write-container {
     /*background-color: #F2F2F2;*/
     /* 페이지가 움직여도 고정되도록 position:fixed  */
     position: fixed;
@@ -126,26 +126,26 @@ main {
     width: 100%;
 }
 
-.chat__write-icon{
+.chat-write-icon{
     cursor: pointer;
 }
 
-.chat__send-icon{
+.chat-send-icon{
     cursor: pointer;
     color : steelblue;
 }
 
-.chat__icon-left {
+.chat-icon-left {
     position: absolute;
     left: 10px;
 }
 
-.chat__icon-right {
+.chat-icon-right {
     position: absolute;
     right: 10px;
 }
 
-.chat__write-container-input{
+.chat-write-container-input{
     bottom: 0px;
     width: 97%;
     border : 1px solid;
@@ -156,7 +156,7 @@ main {
     transform 0.3s ease-in-out;
 }
 
-.chat__write {
+.chat-write {
     bottom: 0px;
     margin: 0 auto;
     padding: 10px;
@@ -165,30 +165,30 @@ main {
     font-size: 14px;
 }
 
-.chat__icon {
+.chat-icon {
     transition: opacity 0.2s ease-in-out;
 }
 
-.chat__write:focus ~ .chat__icon {
+.chat-write:focus ~ .chat-icon {
     opacity: 0;
 }
 
-.chat__write-container i {
+.chat-write-container i {
     font-size: 24px;
 }
 
 /* 채팅을 입력하는 부분만 너비가 넓어야 함  ~~grid-column 1fr 8fr 1fr */
-.chat__write-column:nth-child(2) {
+.chat-write-column:nth-child(2) {
     width: 80%;
 }
 
 /* 채팅을 입력하는 부분 */
-.chat__write-column input {
+.chat-write-column input {
     width: 100%;
 }
 
 /* 메시지 리스트  flex+ flex-direction:column으로 세로 정렬 */
-.chat__messages {
+.chat-messages {
     border-top: 1px solid #fcfcfc;
     display: flex;
     flex-direction: column;
@@ -199,7 +199,7 @@ main {
 }
 
 /* 채팅방 윗부분 타임스탬프 디자인 */
-.chat__messages .chat__timestamp {
+.chat-messages .chat-timestamp {
     background-color: white;
     font-size: 14px;
     padding: 5px 10px;
@@ -218,7 +218,7 @@ main {
     margin-bottom: 25px;
 }
 /* 수신, 송신 메세지 버블 공통 css  */
-.message .message__bubble {
+.message .message-bubble {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
     rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
@@ -226,11 +226,11 @@ main {
     border-radius: 30px;
     display: block;
 }
-.message__bubble__warn, .message__bubble__block{
+.message-bubble-warn, .message-bubble-block{
     font-weight: bold;
 }
 
-.message__timestamp {
+.message-timestamp {
     font-size: 12px;
 }
 
@@ -262,13 +262,13 @@ main {
 }
 
 /* 수신 메시지 타임 스탬프  */
-.incoming-message .message__timestamp {
+.incoming-message .message-timestamp {
     margin-top: 50px;
     margin-left: 10px;
 }
 
 /* 수신 메시지 메시지 작성자 */
-.incoming-message .message__author {
+.incoming-message .message-author {
     margin-bottom: 15px;
     display: block;
     font-weight: 600;
@@ -276,7 +276,7 @@ main {
 }
 
 /* 수신 메시지 버블 왼쪽 윗부분 flat하게 만들기 + gradient 속성 */
-.incoming-message .message__bubble {
+.incoming-message .message-bubble {
     border-top-left-radius: 0px;
     /*background-image: linear-gradient(to right, #bdc3c7, #2c3e50);*/
 }
@@ -288,12 +288,12 @@ main {
 }
 
 /* 송신 메시지 타임스탬프 */
-.sent-message .message__timestamp {
+.sent-message .message-timestamp {
     margin-right: 10px;
 }
 
 /* 송신 메시지 버블 오른쪽 아래 flat + gradient 속성 */
-.sent-message .message__bubble {
+.sent-message .message-bubble {
     border-bottom-right-radius: 0px;
     background-color: #FDDEA1;
     /*background-image: linear-gradient(to left, #ffe259, #ffa751);*/
@@ -329,10 +329,10 @@ main {
     animation: sentAnim 0.5s ease-out forwards;
 }
 
-.chat__write{
+.chat-write{
     border : #020202;
     border-color: #ffa751;
 }
-.chats__chat {
+.chats-chat {
     padding: 10px 0px;
 }
