@@ -1,0 +1,300 @@
+.modal-dialog {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.in .modal-dialog {
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+.modal-dialog .modal-container.modal-container-narrow {
+    width: 400px;
+}
+
+.modal-dialog .modal-container {
+    width: 1346px;
+    border-radius: 2px;
+    background-color: #222222;
+    box-shadow: 0 0 16px rgb(0 0 0 / 20%);
+    border: none;
+    padding: 0px;
+}
+
+.modal-dialog .modal-container div.modal-header {
+    border: none;
+    padding: 15.5px 20px;
+    min-height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2D2D2D;
+}
+
+.modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.modal-dialog .modal-container div.modal-header div.title {
+    display: block;
+    font-size: 15px;
+    margin: 0;
+    word-break: break-all;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    min-height: 21px;
+    line-height: 21px;
+}
+
+div.title {
+    display: none;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 24px 0;
+    font-size: 24px;
+    letter-spacing: 0;
+    font-weight: 500;
+    color: #EEEEEE;
+}
+
+.modal-dialog .modal-container div.modal-header button.close {
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    text-shadow: none;
+    opacity: 1;
+    outline: none;
+    font-size: 24px;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.modal-header .close {
+    margin-top: -2px;
+}
+
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+
+button, button:focus, button:active {
+    outline: none;
+    padding: 0px 12px;
+    line-height: 0px!important;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+button {
+    appearance: auto;
+    writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    box-sizing: border-box;
+    margin: 0em;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-image: initial;
+}
+
+.modal-dialog .modal-container div.modal-body.modal-body-no-scroll {
+    overflow: visible;
+}
+
+.modal-dialog .modal-container div.modal-body {
+    max-height: 672px;
+}
+
+.modal-dialog .modal-container div.modal-body {
+    padding: 20px 20px 20px 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    max-height: 472px;
+}
+
+.modal-body {
+    position: relative;
+    padding: 15px;
+}
+
+.modal-alert .alert-body {
+    word-break: break-all;
+}
+
+.modal-dialog .modal-container div.modal-footer {
+    border: none;
+    padding: 20px;
+}
+
+.modal-footer {
+    padding: 15px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.modal-dialog .modal-container div.modal-footer button.primary {
+    background-color: #E57A1A;
+    color: #222222;
+    border-radius: 2px;
+    border: 1px solid #E57A1A;
+    outline: none;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color .2s,border .2s,color .2s,opacity .2s;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    white-space: nowrap;
+}
+
+.modal-dialog .modal-container div.modal-footer button {
+    height: 36px;
+    padding: 0 24px;
+    font-size: 14px;
+    float: right;
+    line-height: 0;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin: 0 0 0 8px;
+}
+button.primary {
+    background-color: #E57A1A;
+    color: #222222;
+    border-radius: 2px;
+    border: 1px solid #E57A1A;
+    outline: none;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color .2s,border .2s,color .2s,opacity .2s;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    white-space: nowrap;
+}
+
+button, button:focus, button:active {
+    outline: none;
+    padding: 0px 12px;
+    line-height: 0px!important;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
+}
+
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font: inherit;
+    color: inherit;
+}
+
+.modal-dialog .modal-container div.modal-footer button.general {
+    background-color: #2D2D2D;
+    color: #EEEEEE;
+    border-radius: 2px;
+    border: 1px solid #363636;
+    outline: none;
+    text-align: center;
+    font-weight: 400;
+    transition: background-color .2s,border .2s,color .2s,opacity .2s;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    white-space: nowrap;
+}
+
+button.general {
+    background-color: #2D2D2D;
+    color: #EEEEEE;
+    border-radius: 2px;
+    border: 1px solid #363636;
+    outline: none;
+    text-align: center;
+    font-weight: 400;
+    transition: background-color .2s,border .2s,color .2s,opacity .2s;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    white-space: nowrap;
+}
