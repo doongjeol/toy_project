@@ -14,7 +14,7 @@
     display: block;
 }
 
-.modal_body {
+.modal_container {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -33,21 +33,25 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
-.modal_header {
+.modal_header, .modal_body, .modal_footer{
     position: absolute;
-    top: 50%;
-    left: 50%;
-
-    width : 400px;
-    height : 200px;
-
-    padding: 40px;
+    display: inline;
+    width : inherit;
 
     text-align: center;
-
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
-
     transform: translateX(-50%) translateY(-50%);
+    /*box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);*/
+}
+
+.modal_header {
+    background-color: red;
+    height: 50px;
+}
+
+.modal_body {
+    background-color: greenyellow;
+}
+
+.modal_footer{
+    background-color: black;
 }
