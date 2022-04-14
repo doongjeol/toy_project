@@ -1,4 +1,4 @@
-.modal{
+.modal, .modal_ban_save_alert, .modal_ban_remove_alert, .modal_ban_info_alert{
     position: absolute;
     top:0;
     left:0;
@@ -10,21 +10,17 @@
     background-color: rgba(44,44,44,0.7);
 }
 
-.modal.show {
+.modal.show, .modal_ban_save_alert.show, .modal_ban_remove_alert.show, .modal_ban_info_alert.show {
     display: block;
 }
+
 
 .modal_container {
     position: absolute;
     top: 50%;
     left: 50%;
 
-    width : 400px;
-    height : 200px;
-
     padding: 40px;
-
-    text-align: center;
 
     background-color: white;
     border-radius: 10px;
@@ -33,25 +29,140 @@
     transform: translateX(-50%) translateY(-50%);
 }
 
+.modal_banlist,.modal_modify_nick{
+    width : 400px;
+    height : 200px;
+}
+
+.modal_ban_alert{
+    width : 400px;
+    height : 100px;
+}
+
 .modal_header, .modal_body, .modal_footer{
-    position: absolute;
     display: inline;
     width : inherit;
 
-    text-align: center;
-    transform: translateX(-50%) translateY(-50%);
-    /*box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);*/
 }
 
 .modal_header {
-    background-color: red;
-    height: 50px;
+    display: block;
 }
 
-.modal_body {
-    background-color: greenyellow;
+.title, .close_header{
+    display: inline;
+    font-size: 20px;
+}
+
+.close_header{
+    background-color: transparent;
+    border : none;
+    margin-left: 180px;
+}
+
+.ban_list_close{
+    margin-left: 194px;
+}
+
+.close_ban_alert_header{
+    margin-left: 380px;
+}
+
+.modify_nick_close_header{
+    margin-left: 260px;
+}
+
+.modal_body{
+    font-size: 16px;
+}
+
+.modal_body_content {
+    padding: 0px 34px 34px 0px;
+    display: block;
+    color: gray;
+}
+
+.modal_body_container{
+    list-style: none;
+    padding-left: 0px;
+    overflow: auto;
+    height : 150px;
+}
+
+.modal_body_container::-webkit-scrollbar {
+    width: 10px;
+    margin-right: 10px;
+}
+.modal_body_container::-webkit-scrollbar-thumb {
+    background-color: #A6A6A6;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+}
+.modal_body_container::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 2px white;
+}
+
+.modal_body_item{
+    margin-bottom: 10px;
+    color : gray;
+}
+
+.delete_icon{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.btn_delete_ban_user{
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    background-color: transparent;
+}
+
+.modify_nick_container_input{
+    margin: 50px 0;
+}
+
+.modify_nick_input{
+    width: 376px;
+    padding: 10px;
+    border-radius: 4px;
+    border-width: 1px;
+    border-color: #787878;
+}
+
+.modify_nick_is_invalid{
+    color : tomato;
+    font-size: 12px;
+    margin: 4px 0;
 }
 
 .modal_footer{
     background-color: black;
+}
+
+.modal_footer_container{
+    margin-left: 260px;
+}
+
+.close_header{
+    cursor: pointer;
+}
+
+.primary, .close_footer{
+    padding: 5px 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+.primary{
+    background-color: #7158F3;
+}
+
+.close_footer{
+    background-color: #666;
 }

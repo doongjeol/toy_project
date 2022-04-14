@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>팝업</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</head>
+<body>
+    <div class="modal">
+        <div class = "modal_container modal_modify_nick">
+            <div class="modal_header">
+                <div class = "title">닉네임 변경</div>
+                <button class="close_header modify_nick_close_header" extra-role="close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal_body">
+                <div class="modify_nick_container_input">
+                    <input
+                            type="text"
+                            placeholder="16자 이하로 입력하세요."
+                            class="modify_nick_input"
+                            maxlength="16"
+                    />
+                    <div class="modify_nick_is_invalid"></div>
+              </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="modal_footer_container">
+                    <button class="primary modify_nick_save" extra-role="apply">저장</button>
+                    <button class="close_footer modify_nick_close_footer" extra-role="close">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn-open-popup">모달 띄우기</button>
+
+    <script src="js/popup_common.js"></script>
+    <script src="js/popup_modify_nick.js"></script>
+</body>
+</html>

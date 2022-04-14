@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>팝업</title>
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</head>
+<body>
+    <div class="modal">
+        <div class = "modal_container modal_ban_alert">
+            <div class="modal_header">
+                <button class="close_header close_ban_alert_header" extra-role="close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal_body">
+                <span class = "modal_body_content">차단하시겠습니까?</span>
+            </div>
+
+            <div class="modal-footer">
+                <div class="modal_footer_container">
+                    <button class="primary btn_ban" extra-role="apply">차단</button>
+                    <button class="close_footer" extra-role="close">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal_ban_save_alert">
+        <div class = "modal_container modal_ban_alert">
+            <div class="modal_header">
+                <button class="close_header close_ban_alert_header close_ban_save_alert_header" extra-role="close"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="modal_body">
+                <span class = "modal_body_content">차단하였습니다.</span>
+            </div>
+        </div>
+    </div>
+    <button class="btn-open-popup">모달 띄우기</button>
+
+    <script src="js/popup_common.js"></script>
+    <script src="js/popup_ban_alert.js"></script>
+</body>
+</html>
