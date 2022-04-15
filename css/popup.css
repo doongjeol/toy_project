@@ -1,4 +1,4 @@
-.modal, .modal_ban_save_alert, .modal_ban_remove_alert, .modal_ban_info_alert{
+.modal, .modal_ban_save_alert, .modal_ban_remove_alert, .modal_ban_info_alert, .modal_modify_nick_info{
     position: absolute;
     top:0;
     left:0;
@@ -10,7 +10,7 @@
     background-color: rgba(44,44,44,0.7);
 }
 
-.modal.show, .modal_ban_save_alert.show, .modal_ban_remove_alert.show, .modal_ban_info_alert.show {
+.modal.show, .modal_ban_save_alert.show, .modal_ban_remove_alert.show, .modal_ban_info_alert.show, .modal_modify_nick_info.show {
     display: block;
 }
 
@@ -64,7 +64,7 @@
     margin-left: 194px;
 }
 
-.close_ban_alert_header{
+.close_alert_info_header{
     margin-left: 380px;
 }
 

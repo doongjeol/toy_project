@@ -11,11 +11,13 @@ const closeBanAlertSaveHeader = function(){
     modalBanSaveAlert.classList.remove('show');
 }
 
+// 차단 버튼 클릭
 btnBan.addEventListener('click',() =>{
     modalBanSaveAlert.classList.toggle('show');
-
+    closeBanAlertHeader()
 });
 
+//
 btnCloseBanSaveAlertHeader.addEventListener('click',() =>{
     closeBanAlertSaveHeader()
     closeBanAlertHeader()
