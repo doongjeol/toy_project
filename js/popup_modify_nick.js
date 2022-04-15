@@ -12,19 +12,29 @@ const checkModifyNick = function(){
         txtIsInvalidNick.style.display = 'block';
         txtIsInvalidNick.textContent = "닉네임을 입력해주세요."
     } else if(inputModifyNick.value.length > 0){
-        txtIsInvalidNick.style.display = 'none';
-        inputModifyNick.value = "";
+        clearTxtIsInvalid();
+        clearModifyNickInput();
         modal2.classList.remove('show');
         modalModifyNickInfo.classList.toggle('show');
     }
 }
 
+const clearModifyNickInput = function(){
+    inputModifyNick.value = "";
+}
+
+const clearTxtIsInvalid = function(){
+    txtIsInvalidNick.style.display = 'none';
+}
+
 btnCloseModifyNickHeader.addEventListener('click',() =>{
     inputModifyNick.value = null;
+    clearTxtIsInvalid();
 });
 
 btnCloseModifyNickFooter.addEventListener('click',() =>{
     inputModifyNick.value = null;
+    clearTxtIsInvalid();
 });
 
 btnModifyNickSave.addEventListener('click',() =>{
